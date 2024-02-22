@@ -7,8 +7,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: path.resolve(__dirname, "src/index.ts"),
-      name: "@smoothcomp/ui",
-      fileName: (format) => `@smoothcomp-ui.${format}.js`,
+      name: "@smoothcomp/unstyled",
+      fileName: (format) => `@smoothcomp-unstyled.${format}.js`,
     },
     rollupOptions: {
       external: ["vue", "primevue"],

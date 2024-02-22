@@ -1,14 +1,18 @@
 {
-  "name": "ui",
+  "name": "@smoothcomp/ui",
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "main": "dist/@smoothcomp-ui.umd.js",
+  "module": "dist/@smoothcomp-ui.es.js",
+  "styles": "dist/style.css",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
     "preview": "vite preview"
   },
-  "dependencies": {
+  "peerDependencies": {
+    "primeicons": "^6.0.1",
     "primevue": "^3.48.1",
     "vue": "^3.4.19"
   },
@@ -16,6 +20,12 @@
     "@repo/typescript-config": "workspace:*",
     "@smoothcomp/tailwind-config": "workspace:*",
     "@vitejs/plugin-vue": "^5.0.4",
-    "vite": "^5.1.4"
+    "autoprefixer": "^10.4.17",
+    "postcss": "^8.4.35",
+    "primeicons": "^6.0.1",
+    "primevue": "^3.48.1",
+    "tailwindcss": "^3.4.0",
+    "vite": "^5.1.4",
+    "vue": "^3.4.19"
   }
 }
